@@ -8,13 +8,13 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "gh-pages": "^3.2.3",
-    "macro-css": "^1.0.4",
-    "node-sass": "^4.14.1",
+    "macro-css": "^1.0.5",
+    "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-content-loader": "^6.0.3",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
