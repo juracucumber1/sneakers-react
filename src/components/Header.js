@@ -6,7 +6,7 @@ function Header() {
             <div className="d-flex align-center">
                 <img width={80} height={80} src="/img/logo-header.png" alt="Logo"/>
                 <div>
-                    <h3 className="text-uppercase">Название</h3>
+                    <h3 className="text-uppercase">Sneakers</h3>
                     <p className="opacity-5">Магазин лучших кросовок</p>
                 </div>
             </div>
