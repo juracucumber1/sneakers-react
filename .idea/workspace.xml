@@ -11,11 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7937c21f-6e24-4e24-9ce3-e1ce4d109f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/kros/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
@@ -24,35 +38,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28a4F2rVooKpay3AfYkPoaKR9DN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cucumber/Documents/GitHub/sneakers-react&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,12 +94,20 @@
       <workItem from="1653059393854" duration="978000" />
       <workItem from="1653061890175" duration="68000" />
       <workItem from="1653085800023" duration="11593000" />
-      <workItem from="1653424055985" duration="4093000" />
+      <workItem from="1653424055985" duration="7646000" />
+      <workItem from="1653495004205" duration="266000" />
+      <workItem from="1653634508424" duration="767000" />
+      <workItem from="1653740011524" duration="318000" />
+      <workItem from="1653740373340" duration="1685000" />
+      <workItem from="1653742093051" duration="3683000" />
+      <workItem from="1653753897449" duration="3488000" />
+      <workItem from="1653813222628" duration="3785000" />
+      <workItem from="1653825308824" duration="9824000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -96,72 +119,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2748" y="431" key="#ESLint" timestamp="1652911559903">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2748" y="431" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652911559903" />
-    <state x="845" y="383" key="#Notifications" timestamp="1651454928582">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="845" y="383" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651454928582" />
-    <state x="765" y="346" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1651447507201">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="346" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651447507201" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1651452597983">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651452597983" />
-    <state x="761" y="393" key="FileChooserDialogImpl" timestamp="1651447219843">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="761" y="393" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651447219843" />
-    <state width="1899" height="102" key="GridCell.Tab.0.bottom" timestamp="1653059167969">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1651444632166" />
-    <state width="1899" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651446290051" />
-    <state width="1899" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1653059167969" />
-    <state width="1899" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652910050278" />
-    <state width="1899" height="102" key="GridCell.Tab.0.center" timestamp="1653059167969">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="102" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1651444632166" />
-    <state width="1899" height="102" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651446290050" />
-    <state width="1899" height="102" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1653059167969" />
-    <state width="1899" height="102" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652910050278" />
-    <state width="1899" height="102" key="GridCell.Tab.0.left" timestamp="1653059167969">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="102" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1651444632166" />
-    <state width="1899" height="102" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651446290050" />
-    <state width="1899" height="102" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1653059167969" />
-    <state width="1899" height="102" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652910050277" />
-    <state width="1899" height="102" key="GridCell.Tab.0.right" timestamp="1653059167969">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="102" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1651444632166" />
-    <state width="1899" height="102" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651446290051" />
-    <state width="1899" height="102" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1653059167969" />
-    <state width="1899" height="102" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652910050278" />
-    <state x="2359" y="104" width="998" height="800" key="SettingsEditor" timestamp="1652911715766">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="439" y="104" width="998" height="800" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651447897292" />
-    <state x="2359" y="104" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652911715766" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1653327753068">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1651446488880" />
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1653327753068" />
-    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652910129562" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1653430040755">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@0.0.1920.1040" timestamp="1653430040755" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652918223521" />
   </component>
 </project>

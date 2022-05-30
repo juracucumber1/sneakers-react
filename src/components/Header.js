@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Header = () => {
+function Header() {
     return (
         <header className="d-flex justify-between align-center p-40">
             <div className="d-flex align-center">
-                <img width={80} height={80} src="/img/logo-header.png"/>
+                <img width={80} height={80} src="/img/logo-header.png" alt="Logo"/>
                 <div>
                     <h3 className="text-uppercase">Название</h3>
                     <p className="opacity-5">Магазин лучших кросовок</p>
@@ -12,7 +12,7 @@ const Header = () => {
             </div>
             <ul className="d-flex">
                 <li className="mr-30">
-                    <img width={18} height={18} src="/img/korzina.svg"/>
+                    <img width={18} height={18} src="/img/korzina.svg" alt="Drawer"/>
                     <span>6754руб.</span>
                 </li>
                 <li>

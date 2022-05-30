@@ -9,8 +9,7 @@ ReactDOM.render(
         <App />,
     </React.StrictMode>,
     document.getElementById('root'),
-
 );
 
-  // Тайминг 36:00
+
 

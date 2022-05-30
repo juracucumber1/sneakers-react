@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Drawer = () => {
+function Drawer() {
     return (
         <div style={{display: 'none'}} className="overlay">
             <div className="drawer">
@@ -12,7 +12,7 @@ const Drawer = () => {
 
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{backgroundImage: 'url(/img/kros/4.jpg)'}}
+                            style={{backgroundImage: 'url(/img/sneakers/4.jpg)'}}
                             className="cartItemImg">
 
                         </div>
@@ -25,7 +25,7 @@ const Drawer = () => {
 
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{backgroundImage: 'url(/img/kros/1.jpg)'}}
+                            style={{backgroundImage: 'url(/img/sneakers/1.jpg)'}}
                             className="cartItemImg">
 
                         </div>
@@ -38,7 +38,7 @@ const Drawer = () => {
 
                     <div className="cartItem d-flex align-center mb-20">
                         <div
-                            style={{backgroundImage: 'url(/img/kros/4.jpg)'}}
+                            style={{backgroundImage: 'url(/img/sneakers/4.jpg)'}}
                             className="cartItemImg">
 
                         </div>
