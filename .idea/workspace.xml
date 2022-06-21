@@ -11,14 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7937c21f-6e24-4e24-9ce3-e1ce4d109f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/btn-cheked.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,34 @@
       <workItem from="1653825308824" duration="12420000" />
       <workItem from="1653901684891" duration="7000" />
       <workItem from="1653902416704" duration="1740000" />
-      <workItem from="1653904185021" duration="1228000" />
+      <workItem from="1653904185021" duration="4501000" />
+      <workItem from="1653924902915" duration="1973000" />
+      <workItem from="1653980448121" duration="1871000" />
+      <workItem from="1653987060747" duration="4059000" />
+      <workItem from="1654005989761" duration="6341000" />
+      <workItem from="1654189687662" duration="89000" />
+      <workItem from="1654246078548" duration="594000" />
+      <workItem from="1654344319289" duration="1962000" />
+      <workItem from="1654446840489" duration="714000" />
+      <workItem from="1654868854425" duration="1551000" />
+      <workItem from="1654956552662" duration="589000" />
+      <workItem from="1654966186932" duration="1379000" />
+      <workItem from="1655046396060" duration="4624000" />
+      <workItem from="1655063726587" duration="3185000" />
+      <workItem from="1655147455634" duration="591000" />
+      <workItem from="1655187395681" duration="17000" />
+      <workItem from="1655302075131" duration="3346000" />
+      <workItem from="1655327966998" duration="6000" />
+      <workItem from="1655420336853" duration="1805000" />
+      <workItem from="1655439967031" duration="1191000" />
+      <workItem from="1655481280987" duration="653000" />
+      <workItem from="1655490393096" duration="3566000" />
+      <workItem from="1655505219593" duration="4094000" />
+      <workItem from="1655572539285" duration="3851000" />
+      <workItem from="1655593222949" duration="1189000" />
+      <workItem from="1655628984995" duration="1708000" />
+      <workItem from="1655767857049" duration="1003000" />
+      <workItem from="1655790519792" duration="801000" />
     </task>
     <servers />
   </component>
