@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./components/Card/Card";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
+import axios from "axios";
 
 // const cardData = [
 //     {
@@ -54,59 +55,82 @@ import Drawer from "./components/Drawer";
 function App() {
 
     const [items, setItems] = React.useState([]);
-    const [cartOpened, setCartOpened] = React.useState(false);
     const [cartItems, setCartItems] = React.useState([]);
+    const [favorites, setFavorites] = React.useState([]);
+    const [searchValue, setSearchValue] = React.useState('');
+    const [cartOpened, setCartOpened] = React.useState(false);
+    const [cartClear, setCratClear] = React.useState('')
 
     React.useEffect(() => {
-        fetch('https://62a61a80b9b74f766a43edf2.mockapi.io/items')
-            .then((res) => {
-                return res.json();
-            })
-            .then((json) => {
-                setItems(json);
-            })
+        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/items').then((res) => {
+            setItems(res.data)
+        })
+        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer').then((res) => {
+            setCartItems(res.data)
+        })
     }, [])
 
     const onAddToCart = (obj) => {
-        setCartItems(prev =>[... prev, obj])
+        axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer', obj);
+        setCartItems(prev => [...prev, obj])
     }
 
-    console.log(cartItems)
+    const onRemoveItem = (id) => {
+        axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/drawer/${id}`);
+        setCartItems((prev) => prev.filter((item) => item.id !== id))
+    }
+
+    const onAddToFavorite = (obj) => {
+        axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
+        setFavorites(prev => [...prev, obj])
+    }
+
+    const onChangeSearchInput = (event) => {
+        setSearchValue(event.target.value)
+    }
+
 
     return (
         <div className="wrapper clear">
 
-            {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)}/>}
+
+
+            {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>}
             <Header onClickCart={() => setCartOpened(true)}/>
 
             <div className="content p-40">
                 <div className='d-flex align-center justify-between mb-40'>
-                    <h1>все кросовки</h1>
+                    <h1>{searchValue ? `Поиск по запросу:"${searchValue}"` : `Все кросовки`}</h1>
                     <div className='search-block d-flex'>
                         <img width={18} height={18} src='/img/search-input.svg' alt="Search"/>
-                        <input placeholder='Поиск...'/>
+                        {searchValue &&
+                            <img onClick={() => setSearchValue('')} className="clear cu-p" src="/img/btn-remove.svg"
+                                 alt="Clear"/>}
+                        <input onChange={onChangeSearchInput} value={searchValue} placeholder='Поиск...'/>
                     </div>
                 </div>
                 <div
                     className="d-flex flex-wrap">
-                    {items.map((items) => (
+                    {items.filter(item => item.title.toLowerCase().includes(searchValue)).map((item) => (
 
                         <Card
-                            title={items.title}
-                            price={items.price}
-                            imageUrl={items.imageUrl}
-                            onFavorite={() => console.log('Добавили закладки')}
-                            onPlus={(obj) => onAddToCart(items)}
+                            key={item.title}
+                            title={item.title}
+                            price={item.price}
+                            imageUrl={item.imageUrl}
+                            onFavorite={(obj) => onAddToFavorite(obj)}
+                            onPlus={(obj) => onAddToCart(obj)}
                         />
 
                     ))}
                 </div>
             </div>
         </div>
+
     );
 }
 
 export default App;
 
 
-// 02:02:00 #4
+// 01:15:00 #5
