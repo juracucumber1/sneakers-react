@@ -87,12 +87,16 @@ function App() {
     }
 
     const onAddToFavorite = async (obj) => {
-        if (favorites.find((favObj) => favObj.id === obj.id)) {
-            axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite/${obj.id}`)
-        }
-        else {
-            const { data } =  await axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
-            setFavorites(prev => [...prev, data])
+        try {
+            if (favorites.find((favObj) => favObj.id === obj.id)) {
+                axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite/${obj.id}`)
+            }
+            else {
+                const { data } =  await axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
+                setFavorites(prev => [...prev, data])
+            }
+        } catch (error) {
+            alert('Не удалось добавить в закладки');
         }
     };
 
@@ -133,4 +137,4 @@ function App() {
 export default App;
 
 
-// 02:34:00 #5
+// 02:37:00 #5
