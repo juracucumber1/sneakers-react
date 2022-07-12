@@ -1,8 +1,10 @@
 import React from "react";
-import Card from "./components/Card/Card";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import axios from "axios";
+import {Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Favorites from "./pages/Favorites";
 
 // const cardData = [
 //     {
@@ -68,6 +70,10 @@ function App() {
         axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer').then((res) => {
             setCartItems(res.data)
         })
+
+        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite').then((res) => {
+            setFavorites(res.data)
+        })
     }, [])
 
     const onAddToCart = (obj) => {
@@ -80,10 +86,15 @@ function App() {
         setCartItems((prev) => prev.filter((item) => item.id !== id))
     }
 
-    const onAddToFavorite = (obj) => {
-        axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
-        setFavorites(prev => [...prev, obj])
-    }
+    const onAddToFavorite = async (obj) => {
+        if (favorites.find((favObj) => favObj.id === obj.id)) {
+            axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite/${obj.id}`)
+        }
+        else {
+            const { data } =  await axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
+            setFavorites(prev => [...prev, data])
+        }
+    };
 
     const onChangeSearchInput = (event) => {
         setSearchValue(event.target.value)
@@ -93,38 +104,27 @@ function App() {
     return (
         <div className="wrapper clear">
 
+            {cartOpened && (
+                <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>
+            )}
 
-
-            {cartOpened && <Drawer items={cartItems} onClose={() => setCartOpened(false)} onRemove={onRemoveItem}/>}
             <Header onClickCart={() => setCartOpened(true)}/>
 
-            <div className="content p-40">
-                <div className='d-flex align-center justify-between mb-40'>
-                    <h1>{searchValue ? `Поиск по запросу:"${searchValue}"` : `Все кросовки`}</h1>
-                    <div className='search-block d-flex'>
-                        <img width={18} height={18} src='/img/search-input.svg' alt="Search"/>
-                        {searchValue &&
-                            <img onClick={() => setSearchValue('')} className="clear cu-p" src="/img/btn-remove.svg"
-                                 alt="Clear"/>}
-                        <input onChange={onChangeSearchInput} value={searchValue} placeholder='Поиск...'/>
-                    </div>
-                </div>
-                <div
-                    className="d-flex flex-wrap">
-                    {items.filter(item => item.title.toLowerCase().includes(searchValue)).map((item) => (
+            <Route path="/" exact>
+                <Home
+                    items={items}
+                    favorites={favorites}
+                    searchValue={searchValue}
+                    setSearchValue={setSearchValue}
+                    onChangeSearchInput={onChangeSearchInput}
+                    onAddToFavorite={onAddToFavorite}
+                    onAddToCart={onAddToCart}
+                />
+            </Route>
 
-                        <Card
-                            key={item.title}
-                            title={item.title}
-                            price={item.price}
-                            imageUrl={item.imageUrl}
-                            onFavorite={(obj) => onAddToFavorite(obj)}
-                            onPlus={(obj) => onAddToCart(obj)}
-                        />
-
-                    ))}
-                </div>
-            </div>
+            <Route path="/favorites" exact>
+                <Favorites items={favorites} onAddToFavorite={onAddToFavorite}/>
+            </Route>
         </div>
 
     );
@@ -133,4 +133,4 @@ function App() {
 export default App;
 
 
-// 01:15:00 #5
+// 02:34:00 #5
