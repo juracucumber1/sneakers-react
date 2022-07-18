@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 
 // const cardData = [
+//
+//    +++ ID !!!!!!
 //     {
 //         "title": "Мужские Кроссовки Nike Blazer Mid Suede",
 //         "price": "12 000 руб.",
@@ -61,25 +63,32 @@ function App() {
     const [favorites, setFavorites] = React.useState([]);
     const [searchValue, setSearchValue] = React.useState('');
     const [cartOpened, setCartOpened] = React.useState(false);
-    const [cartClear, setCratClear] = React.useState('')
 
     React.useEffect(() => {
-        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/items').then((res) => {
-            setItems(res.data)
-        })
-        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer').then((res) => {
-            setCartItems(res.data)
-        })
+        async function fetchData() {
+            const cartResponse = await axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer')
+            const favoritesResponse = await axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite')
+            const itemsResponse = await axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/items')
 
-        axios.get('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite').then((res) => {
-            setFavorites(res.data)
-        })
+            setCartItems(cartResponse.data)
+            setFavorites(favoritesResponse.data)
+            setItems(itemsResponse.data)
+        }
+
+        fetchData();
+
     }, [])
 
     const onAddToCart = (obj) => {
-        axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer', obj);
-        setCartItems(prev => [...prev, obj])
+        if (cartItems.find((item) => Number(item.id) === Number(obj.id))) {
+            axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/drawer/${obj.id}`);
+            setCartItems(prev => prev.filter(item => Number(item.id) !== Number(obj.id)));
+        } else {
+            axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/drawer', obj);
+            setCartItems(prev => [...prev, obj])
+        }
     }
+
 
     const onRemoveItem = (id) => {
         axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/drawer/${id}`);
@@ -90,9 +99,8 @@ function App() {
         try {
             if (favorites.find((favObj) => favObj.id === obj.id)) {
                 axios.delete(`https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite/${obj.id}`)
-            }
-            else {
-                const { data } =  await axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
+            } else {
+                const {data} = await axios.post('https://62a61a80b9b74f766a43edf2.mockapi.io/Favorite', obj);
                 setFavorites(prev => [...prev, data])
             }
         } catch (error) {
@@ -116,6 +124,7 @@ function App() {
 
             <Route path="/" exact>
                 <Home
+                    cartItems={cartItems}
                     items={items}
                     favorites={favorites}
                     searchValue={searchValue}
