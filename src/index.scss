@@ -190,6 +190,13 @@ header {
   }
 }
 
+.items {
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+
+
 @keyframes button-loading {
   0% {
     opacity: 1;

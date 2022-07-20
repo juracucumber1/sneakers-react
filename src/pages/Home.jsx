@@ -1,10 +1,9 @@
 import React from 'react';
 import Card from "../components/Card/Card";
 
+
 function Home({
                   items,
-                  cartItems,
-                  favorites,
                   searchValue,
                   setSearchValue,
                   onChangeSearchInput,
@@ -12,10 +11,9 @@ function Home({
                   onAddToCart,
                   isLoading,
               }) {
-
     const renderItems = () => {
         const filtredItems = items.filter(item => item.title.toLowerCase().includes(searchValue.toLowerCase()))
-        return (isLoading ? Array(4).fill(<Card loading={isLoading}/>) : filtredItems).map((item, index) => (
+        return (isLoading ? Array(8).fill(<Card loading={isLoading}/>) : filtredItems).map((item, index) => (
 
             <Card
                 key={index}
@@ -24,7 +22,6 @@ function Home({
                 imageUrl={item.imageUrl}
                 onFavorite={(obj) => onAddToFavorite(obj)}
                 onPlus={(obj) => onAddToCart(obj)}
-                added={cartItems.some((obj) => Number(obj.id) === Number(item.id))}
                 loading={isLoading}
             />
         ))
