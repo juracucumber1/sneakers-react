@@ -124,7 +124,7 @@ function App() {
     }
 
     return (
-        <AppContext.Provider value={{items, cartItems, favorites, isItemAdded, onAddToFavorite}}>
+        <AppContext.Provider value={{items, cartItems, favorites, isItemAdded, onAddToFavorite, setCartOpened, setCartItems}}>
             <div className="wrapper clear">
 
                 {cartOpened && (
